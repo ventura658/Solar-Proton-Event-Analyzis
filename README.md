@@ -1,5 +1,5 @@
 # Solar-Proton-Event-Analyzis
-Overview
+## Overview
 This project processes and analyzes historical solar energetic particle (SEP) measurements from NOAA's GOES11 and GOES13 satellites. It focuses on differential proton flux data from the P2-P7 channels, corresponding to energies of approximately 6.6 MeV to 155 MeV. The code performs calculations such as average and maximum flux spectra, integral spectra, peak detection, NOAA S-scale categorization, and correlation with solar disk measurements.
 
 The analysis is based on data files (SEP_H_GOES11.txt and SEP_H_GOES13.txt), which contain unidirectional proton flux measurements in units of particles/MeV/cm²/sec/str. This project helps in identifying SEP events, visualizing spectra, and assessing their intensity and correlation with solar activity.
