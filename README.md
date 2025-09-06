@@ -48,10 +48,18 @@ from datetime import datetime
 plt.rcParams['axes.labelsize'] = 16
 plt.rcParams['axes.titlesize'] = 16
 
-…  # Define the date range for processing 
-      start_date = '2010-05-01'  # use a range that exists in both datasets
-      end_date = '2011-02-27'
+# Define the date range for processing 
+start_date = '2010-05-01'  # use a range that exists in both datasets
+end_date = '2011-02-27'
 ```
+
+2. Average and Maximum Differential Spectra:
+Calculates the mean and maximum flux for each energy channel.
+Plots the spectra for both satellites using logarithmic scales for better visualization.
+```
+
+```
+
 3. Average and Maximum Differential Spectra:
 Calculates the mean and maximum flux for each energy channel.
 Plots the spectra for both satellites using logarithmic scales for better visualization.
