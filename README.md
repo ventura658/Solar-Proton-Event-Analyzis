@@ -52,7 +52,6 @@ plt.rcParams['axes.titlesize'] = 16
 start_date = '2010-05-01'  # use a range that exists in both datasets
 end_date = '2011-02-27'
 ```
-
 2. Average and Maximum Differential Spectra:
 Calculates the mean and maximum flux for each energy channel.
 Plots the spectra for both satellites using logarithmic scales for better visualization.
@@ -89,6 +88,9 @@ plt.yscale('log')
 plt.legend()
 plt.show()  
 ```
+![Average Differential Proton Flux Spectra.png](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/663e4f3879e54617be848197e9d04387bbf80cb2/Average%20Differential%20Proton%20Flux%20Spectra.png)
+![Maximum Differential Proton Flux Spectra.png](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/1520b199d7c6b7c49a38e304dd9507fe205bec9f/Maximum%20Differential%20Proton%20Flux%20Spectra.png)
+
 3. Integral Spectra Calculation:
 Uses spline interpolation to compute integral spectra from the differential spectra.
 Plots the average and maximum integral spectra.
@@ -128,6 +130,9 @@ plt.yscale('log')
 plt.legend()
 plt.show()
 ```
+![Average Integral Proton Flux Spectra.png](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/1520b199d7c6b7c49a38e304dd9507fe205bec9f/Average%20Integral%20Proton%20Flux%20Spectra.png)
+![Maximum Integral Proton Flux Spectra.png](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/1520b199d7c6b7c49a38e304dd9507fe205bec9f/Maximum%20Integral%20Proton%20Flux%20Spectra.png)
+
 4. Flux Above Specific Energies:
 Computes integral fluxes for protons above 10 MeV, 30 MeV, and 80 MeV.
 Prints the results for both satellites.
@@ -174,6 +179,9 @@ print(f"E > 10 MeV: {max_above_10_11} particles/cm²/sec/str")
 print(f"E > 30 MeV: {max_above_30_11} particles/cm²/sec/str")
 print(f"E > 80 MeV: {max_above_80_11} particles/cm²/sec/str")
 ```
+```
+
+```
 5. Peak Appearance Times:
 Identifies the time and value of the peak flux for each channel.
 Outputs the peak details for GOES11 and GOES13.
@@ -198,6 +206,24 @@ goes11.name = 'GOES11'  # Set a name for the DataFrame
 print("\nGOES11 Peak Appearance Times:")  
 peaks_11 = find_peak_times(goes11)
 ```
+```
+GOES13 Peak Appearance Times:
+GOES13 FPDO_1 Max: 3660.0 particles/MeV/cm²/sec/str at Time: 2012-03-08 11:15:00
+GOES13 FPDO_2 Max: 773.0 particles/MeV/cm²/sec/str at Time: 2012-03-08 11:15:00
+GOES13 FPDO_3 Max: 177.0 particles/MeV/cm²/sec/str at Time: 2012-01-24 15:30:00
+GOES13 FPDO_4 Max: 10.8 particles/MeV/cm²/sec/str at Time: 2012-03-07 15:25:00
+GOES13 FPDO_5 Max: 0.721 particles/MeV/cm²/sec/str at Time: 2012-03-07 15:25:00
+GOES13 FPDO_6 Max: 0.165 particles/MeV/cm²/sec/str at Time: 2017-09-10 22:15:00
+
+GOES11 Peak Appearance Times:
+GOES11 FPDO_1 Max: 9080.0 particles/MeV/cm²/sec/str at Time: 2003-10-29 06:15:00
+GOES11 FPDO_2 Max: 2200.0 particles/MeV/cm²/sec/str at Time: 2003-10-29 06:10:00
+GOES11 FPDO_3 Max: 918.0 particles/MeV/cm²/sec/str at Time: 2003-10-29 06:15:00
+GOES11 FPDO_4 Max: 84.1 particles/MeV/cm²/sec/str at Time: 2003-10-29 02:40:00
+GOES11 FPDO_5 Max: 6.82 particles/MeV/cm²/sec/str at Time: 2005-01-20 07:10:00
+GOES11 FPDO_6 Max: 2.91 particles/MeV/cm²/sec/str at Time: 2005-01-20 07:05:00
+
+```
 6. NOAA S-Scale Categorization:
 Classifies events based on the maximum flux above 10 MeV using NOAA thresholds (e.g., >10000 for S5, >1000 for S4, etc.).
 Prints the category for each satellite.
@@ -221,6 +247,11 @@ print(f"\nGOES13 NOAA S-Scale Category for >10 MeV protons: {noaa_cat_13}")
 
 noaa_cat_11 = noaa_category(max_above_10_11)  
 print(f"\nGOES11 NOAA S-Scale Category for >10 MeV protons: {noaa_cat_11}")
+```
+```
+GOES13 NOAA S-Scale Category for >10 MeV protons: S2 (Moderate)
+
+GOES11 NOAA S-Scale Category for >10 MeV protons: S2 (Moderate)
 ```
 7. Correlation with Solar Disk Measurements:
 Merges the GOES13 data with a sample solar disk dataset.
@@ -280,3 +311,11 @@ plt.yscale('log')
 plt.legend()
 plt.show()
 ```
+```
+Pearson correlation: 0.0470630638857849
+Spearman rank correlation: 0.025858897801018608 with p-value: 0.9023484343841848
+The correlation is weak.
+```
+
+![Correlation.png](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/1520b199d7c6b7c49a38e304dd9507fe205bec9f/Correlation.png)
+
