@@ -21,7 +21,7 @@ These files include columns for time (epoch) and flux values for channels P2-P7 
 Additional Data: 
 A sample solar disk dataset is included in the code for correlation analysis.
 
-## Key Features:
+## Key Features
 Load and preprocess data from GOES11 and GOES13.
 Compute average and maximum differential spectra.
 Derive integral spectra and fluxes above specific energy thresholds.
@@ -30,7 +30,7 @@ Categorize events (e.g., S1 for minor storms).
 Correlate GOES data with sample solar disk measurements to explore relationships with solar phenomena.
 
 
-## Code Explanation:
+## Code Explanation
 The solution is implemented in a Jupyter notebook [Solar-Proton-Event-Analysis.ipynb](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/663e4f3879e54617be848197e9d04387bbf80cb2/Solar-Proton-Event-Analysis.ipynb ). Here's a high-level breakdown of the code:
 
 1. Data Loading and Setup:
