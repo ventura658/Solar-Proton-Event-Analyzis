@@ -37,7 +37,7 @@ The solution is implemented in a Jupyter notebook [Solar-Proton-Event-Analysis.i
 Imports necessary libraries: pandas, numpy, matplotlib, scipy, and datetime.
 Loads the GOES11 and GOES13 data files into DataFrames.
 Defines energy channels and processes the data for a specified date range.
-
+```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,7 +51,7 @@ plt.rcParams['axes.titlesize'] = 16
 …  # Define the date range for processing 
       start_date = '2010-05-01'  # use a range that exists in both datasets
       end_date = '2011-02-27'
-
+```
 3. Average and Maximum Differential Spectra:
 Calculates the mean and maximum flux for each energy channel.
 Plots the spectra for both satellites using logarithmic scales for better visualization.
