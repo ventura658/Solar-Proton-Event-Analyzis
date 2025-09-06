@@ -31,7 +31,7 @@ Correlate GOES data with sample solar disk measurements to explore relationships
 
 
 ## Code Explanation:
-The solution is implemented in a Jupyter notebook [Solar-Proton-Event-Analysis.ipynb]( ). Here's a high-level breakdown of the code:
+The solution is implemented in a Jupyter notebook [Solar-Proton-Event-Analysis.ipynb](https://github.com/ventura658/Solar-Proton-Event-Analyzis/blob/663e4f3879e54617be848197e9d04387bbf80cb2/Solar-Proton-Event-Analysis.ipynb ). Here's a high-level breakdown of the code:
 
 1. Data Loading and Setup:
 Imports necessary libraries: pandas, numpy, matplotlib, scipy, and datetime.
