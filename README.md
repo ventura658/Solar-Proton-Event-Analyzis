@@ -180,7 +180,25 @@ print(f"E > 30 MeV: {max_above_30_11} particles/cm²/sec/str")
 print(f"E > 80 MeV: {max_above_80_11} particles/cm²/sec/str")
 ```
 ```
+GOES13 Average Integral Flux Above Energies:
+E > 10 MeV: 1.6628536024747942 particles/cm²/sec/str
+E > 30 MeV: 1.1297788914409748 particles/cm²/sec/str
+E > 80 MeV: 0.35362599344791756 particles/cm²/sec/str
 
+GOES13 Maximum Integral Flux Above Energies:
+E > 10 MeV: 16.363232643706205 particles/cm²/sec/str
+E > 30 MeV: -1.4514350812564087 particles/cm²/sec/str
+E > 80 MeV: 1.0846541616571683 particles/cm²/sec/str
+
+GOES11 Average Integral Flux Above Energies:
+E > 10 MeV: 1.7057115781092442 particles/cm²/sec/str
+E > 30 MeV: 1.141766191781838 particles/cm²/sec/str
+E > 80 MeV: 0.3084520243473524 particles/cm²/sec/str
+
+GOES11 Maximum Integral Flux Above Energies:
+E > 10 MeV: 18.114185517576132 particles/cm²/sec/str
+E > 30 MeV: 1.7931365311836156 particles/cm²/sec/str
+E > 80 MeV: 0.5418206436163837 particles/cm²/sec/str
 ```
 5. Peak Appearance Times:
 Identifies the time and value of the peak flux for each channel.
@@ -222,7 +240,6 @@ GOES11 FPDO_3 Max: 918.0 particles/MeV/cm²/sec/str at Time: 2003-10-29 06:15:00
 GOES11 FPDO_4 Max: 84.1 particles/MeV/cm²/sec/str at Time: 2003-10-29 02:40:00
 GOES11 FPDO_5 Max: 6.82 particles/MeV/cm²/sec/str at Time: 2005-01-20 07:10:00
 GOES11 FPDO_6 Max: 2.91 particles/MeV/cm²/sec/str at Time: 2005-01-20 07:05:00
-
 ```
 6. NOAA S-Scale Categorization:
 Classifies events based on the maximum flux above 10 MeV using NOAA thresholds (e.g., >10000 for S5, >1000 for S4, etc.).
